@@ -1,6 +1,6 @@
 <h1>HW1<h1>
 
-```swift
+```SwiftUI
 import SwiftUI
 
 struct ContentView: View {
@@ -31,8 +31,6 @@ struct Content_Previews: PreviewProvider {
             .foregroundColor(.blue)
     }
 }
-im
-
 
 ```
 
