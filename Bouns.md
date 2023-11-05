@@ -49,8 +49,9 @@ struct ContentView: View{
 
 
 ```
+<br></br>
 <a href = https://drive.google.com/drive/folders/1-0J1p8UEkRxa4UraJhLrIQjqkzOUexaV?usp=drive_link>功能示範影片</a>
-<a href = https://drive.google.com/drive/folders/1--GtSamwOQCnSbQ_NIutIBiI2lIYouxJ?usp=drive_link>功能示範影片</a>
+
 <img src="https://raw.githubusercontent.com/Yyoung2288/YZU-swiftui/main/IMG_0268.jpeg">
 
 
