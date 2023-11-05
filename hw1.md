@@ -1,6 +1,6 @@
 <h1>HW1<h1>
 
-    ```SwiftUI
+```SwiftUI
 import SwiftUI
 
 struct ContentView: View {
@@ -32,7 +32,7 @@ struct Content_Previews: PreviewProvider {
     }
 }
 
-    ```
+```
 
 <img src="https://raw.githubusercontent.com/Yyoung2288/YZU-swiftui/main/IMG_0236.jpeg">
 
