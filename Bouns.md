@@ -3,67 +3,48 @@
 ```SwiftUI
 import SwiftUI
 
-struct ContentView: View {
-    var body: some View {
-        ZStack{
-            
-            Image("background")  
-            let f:Font = Font.custom("Nagurigaki-Crayon", size:50)            
-            
-                Text("我的箱子")
-                .font(f)
-                .padding(.all,10)
-                .foregroundColor(.white)
-                .background(Color.black)
-                .opacity(0.7)
-                .cornerRadius(15)  
-                .offset(x:0, y:-300)
-            VStack {
-                Spacer(minLength: 70)
-                HStack{
-                    TopView(imageName:"yoda")
-                    TopView(imageName:"sheep")
-                    TopView(imageName:"cat")
-                }
-                HStack{
-                    TopView(imageName:"ipad")
-                    TopView(imageName:"projector")
-                    TopView(imageName:"iphone")
-                }
-                HStack{
-                    TopView(imageName: "controller")
-                    TopView(imageName: "airpodspro")
-                    TopView(imageName: "switch")
+struct ContentView: View{
+    let displayFontType = [".default", ".rounded", ".monospaced", ".serif"]
+    @State var displayFontSelected = 0
+    @State var IsDeepScheme = false
+    @State var colorArray:Array = [255.0,255.0,255.0]
+    @State var stepperValue = 0
+    @State var sliderValue = 0.0
+    @State var selectedDate = Date()
+    var body: some View{
+        NavigationView{
+            Form(content:{
+                Section(header: Text("字型設定"), content: {
+                    Picker(selection:$displayFontSelected, label:Text("字型選擇(\(displayFontSelected))"),content:{
+                        ForEach(0..<displayFontType.count,id: \.self, content:{
+                            Text(self.displayFontType[$0])
+                        })//foreach
+                    })//label
+                })//section
+                Section(header:Text("背景風格"),
+                        content: {
+                    Toggle(isOn:$IsDeepScheme,
+                           label:{Text("深色(\(String(IsDeepScheme)))")  
+                    })//toggle
+                })//section
+                Section(header:Text("計數器")){
+                    Stepper("Stepper(\(stepperValue))",
+                            onIncrement:{stepperValue+=1},
+                            onDecrement:{stepperValue-=1})
+                }//section 可不寫content
+                Section(header:Text("滑桿(\(sliderValue,specifier:"%.2f"))")){
+                    Slider(value:$sliderValue, in:0...1)
+                }//section
+                Section(header:Text("選擇日期")){
+                    DatePicker("\(selectedDate.formatted(date: .abbreviated, time: .omitted))", selection:$selectedDate, displayedComponents: .date)
                 }
                 
-            }    
-      }
-        
-    }
-}
-
-struct TitleView: View{
-    var body: some View{
-        Text("我的櫃子")
-            .font(.system(size:200))
-    }
-}
-
-struct TopView :View{
-    var imageName:String
-    var body: some View{
-        VStack{
-            Image(imageName)
-                .resizable()
-                .aspectRatio( contentMode: .fit)
-                .frame(height:100, alignment:.center)
-            Text(imageName.capitalized)
-                .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
-                .font(.system(size:25))
-        }
-        .frame(minWidth: 0, idealWidth: 5, maxWidth: 240, minHeight: 0, idealHeight: 5, maxHeight: .infinity, alignment: .center)    }
-}
-
+                
+            })//form
+            .navigationBarTitle("Setting 設定")
+        }//navigation
+    }//body View
+}//struct
 
 
 
