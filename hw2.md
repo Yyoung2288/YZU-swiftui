@@ -34,7 +34,11 @@ struct Content_Previews: PreviewProvider {
 
 ```
 
-<img src="https://raw.githubusercontent.com/Yyoung2288/YZU-swiftui/main/IMG_0236.jpeg">
+使用者
+<img src="https://raw.githubusercontent.com/Yyoung2288/YZU-swiftui/main/IMG_0260.png">
+<img src="https://raw.githubusercontent.com/Yyoung2288/YZU-swiftui/main/IMG_0262.png">
+<img src="https://raw.githubusercontent.com/Yyoung2288/YZU-swiftui/main/IMG_0263.png">
+<img src="https://raw.githubusercontent.com/Yyoung2288/YZU-swiftui/main/IMG_0265.png">
 
 
 
