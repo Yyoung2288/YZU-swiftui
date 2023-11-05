@@ -69,7 +69,7 @@ struct TopView :View{
 
 ```
 
-<img src="https://raw.githubusercontent.com/Yyoung2288/YZU-swiftui/main/IMG_0268.png">
+<img src="https://raw.githubusercontent.com/Yyoung2288/YZU-swiftui/main/IMG_0268.jpeg">
 
 
 
