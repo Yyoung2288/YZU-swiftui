@@ -141,8 +141,9 @@ struct ContentView: View {
 
 ```
 
-專案說明：使用者可以選擇要出甚麼拳，對手會隨機出剪刀石頭布，並且系統會告訴你是否獲勝。
-功能示範影片：https://drive.google.com/drive/folders/1-0J1p8UEkRxa4UraJhLrIQjqkzOUexaV?usp=sharing
+<h4>專案說明：使用者可以選擇要出甚麼拳，對手會隨機出剪刀石頭布，並且系統會告訴你是否獲勝。</h4>
+<br></br>
+<a href = https://drive.google.com/drive/folders/1-0J1p8UEkRxa4UraJhLrIQjqkzOUexaV?usp=sharing>功能示範影片</a>
 <img src="https://raw.githubusercontent.com/Yyoung2288/YZU-swiftui/main/IMG_0260.png">
 <img src="https://raw.githubusercontent.com/Yyoung2288/YZU-swiftui/main/IMG_0262.png">
 <img src="https://raw.githubusercontent.com/Yyoung2288/YZU-swiftui/main/IMG_0263.png">
