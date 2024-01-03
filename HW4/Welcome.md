@@ -19,14 +19,9 @@ struct WelcomeView: View{
     }
 }
 
-
-
-
-
-
 ```
 
-
+<img src="https://raw.githubusercontent.com/Yyoung2288/YZU-swiftui/main/WelcomeView.PNG">
 
 
 
