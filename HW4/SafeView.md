@@ -1,5 +1,5 @@
 
-<h1>ContentView<h1>
+<h1>SafeView<h1>
 
 ```SwiftUI
 import SwiftUI
