@@ -1,4 +1,4 @@
-<h1>ContentView<h1>
+<h1>CardView<h1>
 
 ```SwiftUI
 import SwiftUI
