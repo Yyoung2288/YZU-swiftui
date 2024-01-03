@@ -26,6 +26,7 @@ struct SafeView: View{
 
 
 ```
+<h1>透過敲打木魚累積陰德<h1>
 <img src="https://raw.githubusercontent.com/Yyoung2288/YZU-swiftui/main/SafeView.PNG">
 
 
