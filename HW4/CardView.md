@@ -55,7 +55,7 @@ struct CardView: View{
 
 
 ```
-<img src="https://raw.githubusercontent.com/Yyoung2288/YZU-swiftui/main/CardView.png">
+<img src="https://raw.githubusercontent.com/Yyoung2288/YZU-swiftui/main/CardView.PNG">
 
 
 
